@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ukázky stylů</title>
     <style>
+        /* * {
+            background-color: lime;
+        }
         body {
-            background-color: rgb(255, 127, 127);
-            /* text-align: center; */
+
         }
         p {
             color: blue;
@@ -31,12 +33,86 @@
         a
         {
             font-style: normal;
+        } */
+        .dulezite {
+            color: red; 
+            font-weight: bold
         }
+        p.poznamka {
+            font-size: x-small
+        }
+        #krtek {
+            color: violet;
+            text-align: left;
+        }
+        ol.druhy > li > a {
+            font-style: italic;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.2em;
+            text-indent: 2.5em;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        p.dulezite {
+            text-decoration: line-through;
+            /* color: blue;
+            cursor: pointer;              */
+        }
+
+        h1 {
+            letter-spacing: -2px;
+        }
+
+        body {
+            /* background-color: darkgoldenrod; */
+        }
+
+        ol.druhy {
+            /* list-style-image: url('odrazka.png') */
+            list-style-position: inside;
+
+        }
+
+        li {
+            /* background-color: cyan; */
+        }
+
     </style>
 </head>
 <body>
     <h1>Nadpis</h1>
-    <h2>Podnadpis</h2>
+    <h2 class="poznamka">Podnadpis</h2>
+
+    <h2 id="krtek">Zahrabat pod zem!</h2>
+
+    <ol>
+        <li>jedna</li>
+        <li>dva</li>
+        <li>tři</li>
+        <li><a href="#">čtyři</a> a pět</li>
+        <li>šest</li>
+    </ol>
+
+    <ol class="druhy">
+        <li class="jina">jedna</li>
+        <li>dva</li>
+        <li>tři</li>
+        <li><a href="#">čtyři</a> a pět</li>
+        <li>šest</li>
+    </ol>
+
+    <p class="dulezite">Kdo to ukradne, tomu upadne!</p>
+    <p>Karel jel na vodu, ale vrátil se už <span class="dulezite">za dva dny!</span>.</p>
+    <p class="poznamka">Předchozí text byl převzat z původní německé verze</p>
+
+    
     <p style="color: brown; font-style: italic;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit accusamus quis explicabo commodi fugiat natus corporis aliquam autem, quas quibusdam? Voluptatem aspernatur dolorum ratione ea voluptatibus reiciendis esse autem a!</p>
     <p>Lorem <a>fikus</a> ipsum dolor sit amet, consectetur adipisicing elit. Fugit accusamus quis explicabo commodi fugiat natus corporis aliquam autem, quas quibusdam? Voluptatem aspernatur dolorum ratione ea voluptatibus reiciendis esse autem a!</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit accusamus quis explicabo commodi fugiat natus corporis aliquam autem, quas quibusdam? Voluptatem aspernatur dolorum ratione ea voluptatibus reiciendis esse autem a!</p>
