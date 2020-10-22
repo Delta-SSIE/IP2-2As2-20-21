@@ -12,8 +12,14 @@ p.note {
 
 figure {
     text-align: center;
+    float: right;
+    visibility: hidden;;
 }
 
 figcaption {
     font-style: italic;
+}
+
+h2 {
+    clear: right;
 }
