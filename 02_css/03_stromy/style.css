@@ -1,0 +1,47 @@
+body {
+    background-color: #e7e7e7;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+div.strom {
+    background-color: #ffffff;
+
+    width: 300px;
+    min-height: 500px;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c0c0c0;
+
+    padding: 1rem;
+
+    margin: 0.25rem;
+
+    display: inline-block;
+
+    line-height: 150%;
+}
+
+div.strom img {
+    display: block;
+    margin-top: 0.5rem;
+    max-width: 300px;
+}
+
+span.nazev {
+    font-weight: bold;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+span.hodnota {
+    font-style: italic;
+}
+
+span.popis {
+    width: 50%;
+    display: inline-block;
+}
+span.popis:after {
+    content: ":";
+}

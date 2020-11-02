@@ -1,0 +1,40 @@
+#main-menu {
+	font-family: 'Trebuchet MS', 'Lucida Grande',   Verdana, Lucida, Geneva, Helvetica,    Arial, sans-serif;
+	background-color: #2175bc;
+
+}
+
+#main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#main-menu li {
+    float: left;
+    border-right: 1px solid #b0b0b0;    
+}
+
+/*
+#main-menu li:last-child {
+    border-right: none;
+} 
+*/
+
+#main-menu li:hover {
+	background-color: #2586d7;
+ }
+
+
+#main-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+ 
+#main-menu li.active {
+ 	background-color: #124067;
+}
