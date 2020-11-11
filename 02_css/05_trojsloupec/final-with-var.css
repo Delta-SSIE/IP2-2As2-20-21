@@ -1,0 +1,96 @@
+:root {
+    --nav-width: 200px;
+    --aside-width: 400px;
+    --central-min-height: 500px;
+    --main-color: #000000;
+    --main-bgcolor: #ffffff;
+    --inverse-color: #ffa500;
+    --inverse-bgcolor: #000000;
+
+}
+
+body {
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+    background-color: #e0e0e0;
+}
+
+#page {
+    width: 1100px;
+    border: 1px solid var(--main-color);
+    margin: 0 auto 1rem;
+    padding: 0;
+    background-color: var(--main-bgcolor);
+}
+
+header {
+    border-bottom: 1px solid var(--main-color);
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+header, footer {
+    background-color: var(--inverse-bgcolor);
+    color: var(--inverse-color);
+}
+
+#central {
+    position: relative;
+    min-height: var(--central-min-height);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    max-height: calc(var(--central-min-height) - 10px);
+    overflow: hidden;
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+nav > ul >li {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+nav a, nav a:link, nav a:visited {
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--inverse-color);
+}
+
+main {
+    margin-left: var(--nav-width);
+    margin-right: calc(var(--aside-width) + 10px);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+
+aside {
+    position: absolute;
+    top:0 ;
+    right: 0;
+    width: var(--aside-width);
+    max-height: calc(var(--central-min-height) - 10px);
+    overflow-y: auto;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: x-small;
+    padding: 0.5rem 1rem;
+}

@@ -42,6 +42,6 @@ span.popis {
     width: 50%;
     display: inline-block;
 }
-span.popis:after {
+span.popis::after {
     content: ":";
 }
