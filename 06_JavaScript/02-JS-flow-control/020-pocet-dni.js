@@ -24,6 +24,11 @@ function pocetDni(mesic) {
     }
 }
 
+//s použitím pole a operátoru nebo
+function pocetDniPole(mesic) {
+    const dni = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    return dni[mesic] || 0;
+}
 
 //kdybychom chtěli skutečný počet dní v tom kterém roce, vypadalo by to takhle (nebudou tam ty kontroly na 0 a false apod.)
 function pocetDni2(mesic, rok) {
