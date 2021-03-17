@@ -37,4 +37,4 @@ function pocetDni2(mesic, rok) {
 
 
 //což je pro milovníky arrow-functions
-const pocetDni2 = (mesic, rok) => new Date(rok, mesic, 0).getDate();
+const pocetDni3 = (mesic, rok) => new Date(rok, mesic, 0).getDate();
