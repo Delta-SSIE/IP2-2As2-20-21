@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8"/>
+    <title>O mně</title>
+    <style>
+        .list-item {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>O mně</h1>
+    
+    <ul>
+        <li>Přezdívka: <span id="nickname"></span></li>
+        <li>Záliby:  <span id="favorites"></span></li>
+        <li>Odkud jsem: <span id="hometown"></span></li>
+    </ul>
+
+    <script>
+        document.body.style.fontFamily = "Arial, sans-serif";
+        document.getElementById("nickname").innerText = "Surikata";
+
+        const favorites = document.getElementById("favorites");
+        favorites.innerText = "rychlý běh";
+
+        document.getElementById("hometown").appendChild(
+            document.createTextNode("Nora, savana, 00152 Afrika")
+        );
+
+        // const items = document.querySelectorAll("li");
+        // for (let item of items){
+        //     item.className = "list-item";
+        // }
+
+        for (let item of document.querySelectorAll("li")){
+            item.className = "list-item";
+        }
+
+        // document.querySelectorAll("li").forEach(
+        //     function(item){
+        //         item.className = "list-item";
+        //     }
+        // )        
+
+        // document.querySelectorAll("li").forEach( item => {item.className = "list-item"});        
+
+
+        const photo = document.createElement("img");
+        photo.src = "https://upload.wikimedia.org/wikipedia/commons/f/ff/Meerkat_%28Suricata_suricatta%29_%282%29.jpg";
+        photo.alt = "Moje foto";
+        // photo.width = "400"; // <img src="…" width="400">
+        photo.style.width = "50%";
+        document.body.appendChild(photo);
+
+
+    </script>
+
+</body>
+</html>
