@@ -1,0 +1,44 @@
+#layout {
+    min-width: 600px;
+    width: 90vw;
+    min-height: 600px;
+    height: 90vh;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-areas: 
+        "code map"
+        "log map"
+        "controls controls";
+}
+
+#layout>*{
+    border: 1px solid #c0c0c0;
+}
+
+#code {
+    grid-area: code;
+}
+
+#map {
+    grid-area: map;
+    display: grid;
+    /* tbd */
+}
+
+#map>.tile{
+    border: 1px solid #c0c0c0;
+}
+#map>.tile.filled{
+    background-color: crimson;
+}
+
+#log {
+    grid-area: log;
+}
+
+#controls {
+    grid-area: controls;
+}
